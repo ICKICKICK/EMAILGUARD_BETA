@@ -61,7 +61,7 @@ public class SessionManager {
     public void logout(){
         editor.clear();
         editor.commit();
-        Intent i = new Intent(context, LoginActivity.class);
+        Intent i = new Intent(context, ConfigMailActivity.class);
         i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         context.startActivity(i);

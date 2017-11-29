@@ -98,14 +98,14 @@ public class Compose extends AppCompatActivity implements View.OnClickListener {
         String message1 = editTextMessage.getText().toString();
         String attachment = String.valueOf(URI);
 
-        Symmetric sym = new Symmetric();
-        String key = sym.GenerateKeyString();
+//        Symmetric sym = new Symmetric();
+//        String key = sym.GenerateKeyString();
         //byte[] nonce = sym.GenerateNonce();
 
-        String mes = sym.Encrypt(key, message1);
-        String message = mes;
-        Log.d("key", key);
-        Log.d("Pesan", mes);
+//        String mes = sym.Encrypt(key, message1);
+        //String message = mes;
+//        Log.d("key", key);
+        //Log.d("Pesan", mes);
 
         /*
         Asymmetric asym = new Asymmetric();

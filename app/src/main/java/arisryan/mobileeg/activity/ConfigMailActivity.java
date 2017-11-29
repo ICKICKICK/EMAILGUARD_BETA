@@ -31,7 +31,7 @@ public class ConfigMailActivity extends BaseApp {
     private EditText logPassword; //provider;
     private Spinner provider;
     private Button btnSet;
-    public String emailLogin;
+    //public String emailLogin;
     //public String token;
 
     @Override
@@ -53,10 +53,10 @@ public class ConfigMailActivity extends BaseApp {
         HashMap<String, String> user = sessionManager.getUserDetails();
         final String name = user.get(SessionManager.kunci_email);
         //final String token = user.get(SessionManager.kunci_token);
-        emailLogin = name;
-        logEmail.setText(emailLogin);
-        logEmail.setFocusable(true);
-        //final String password = user.get(SessionManager.kunci_password);
+//        emailLogin = name;
+//        logEmail.setText(emailLogin);
+//        logEmail.setFocusable(true);
+//        //final String password = user.get(SessionManager.kunci_password);
         btnSet.setOnClickListener(new View.OnClickListener() {
             @Override
 
